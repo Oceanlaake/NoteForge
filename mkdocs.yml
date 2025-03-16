@@ -1,0 +1,12 @@
+site_name: Markdown 你拿我当日本人整
+
+theme:
+  name: material
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true  
+
+extra_javascript:
+  - _js/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
