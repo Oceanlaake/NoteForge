@@ -1,5 +1,10 @@
 document$.subscribe(() => { 
-    document.querySelectorAll(".arithmatex").forEach(el => {
-        katex.render(el.innerHTML, el, { displayMode: el.tagName === "DIV" });
+    renderMathInElement(document.body, {
+        delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "\\[", right: "\\]", display: true }
+        ]
     });
 });
