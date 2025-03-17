@@ -1,4 +1,4 @@
-site_name: Markdown 你拿我当日本人整
+site_name: Ocean的笔记
 
 theme:
   name: material
@@ -6,6 +6,15 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex  
+  - pymdownx.betterem  
+  - pymdownx.tasklist 
+
+
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
