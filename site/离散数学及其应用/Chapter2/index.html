@@ -18,7 +18,7 @@
     
     
       
-        <title>第二章:基础结构 - Markdown 你拿我当日本人整</title>
+        <title>第二章:基础结构 - Ocean的笔记</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Markdown 你拿我当日本人整" class="md-header__button md-logo" aria-label="Markdown 你拿我当日本人整" data-md-component="logo">
+    <a href="../.." title="Ocean的笔记" class="md-header__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Markdown 你拿我当日本人整
+            Ocean的笔记
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Markdown 你拿我当日本人整" class="md-nav__button md-logo" aria-label="Markdown 你拿我当日本人整" data-md-component="logo">
+    <a href="../.." title="Ocean的笔记" class="md-nav__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Markdown 你拿我当日本人整
+    Ocean的笔记
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -228,7 +228,7 @@
             
   
   <span class="md-ellipsis">
-    DM Notes
+    离散数学及其应用
     
   </span>
   
@@ -239,7 +239,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            DM Notes
+            离散数学及其应用
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -557,7 +557,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="./DM_2.png" alt="DM_2" width="400" /></p>
+<p><img alt="DM_2" src="../DM_2.png" /></p>
 <h2 id="25-cardinality-of-sets"><strong>2.5 集合的基数 Cardinality of Sets</strong></h2>
 <h3 id="1-introduction_1">1. 引言 Introduction</h3>
 <ul>
@@ -585,7 +585,7 @@
 <li>一个集合是可数的当且仅当它的元素可以被一个正整数序列编号</li>
 <li>证明:<span class="arithmatex">\(|A| = |\mathbb{N}|,\ \forall a\in A\{a = x\times y|x,y \in \mathbb{N}\}\)</span></li>
 </ul>
-<p><img src="DM_1.png" alt="DM_1" width="400"/> </p>
+<p><img alt="DM_1" src="../DM_1.png" /></p>
 <ul>
 <li>性质:<ol>
 <li>没有无限集的基数小于可数集。</li>
@@ -595,38 +595,56 @@
 </ol>
 </li>
 </ul>
-<details><summary>Example1:0至1之间的有理数是不可数的 </summary>
-
-- 记0~1之间的实数集为$A$($ A = \{ x \in (0,1) | x \in \mathbb{R} \}$)
-- 证明
-    1. 对0~1的所有小数进行编号 
-        - $d_{ij}$ 代表第i个数的第j位小数 
-        - $r_i = 0.d_{i1}d_{i2}d_{i3}...$ 
-    2. 只需构造 $x = 0.x_1x_2x_3...$
-        - 其中 $x_i \neq d_{ii} $
-    3. 此时我们可以找到一个未被我们编号的小数,根据引言中的**D2**, 可知$ |\mathbb{N}| < |A| $
+<details class="question">
+<summary>1. 0至1之间的有理数是不可数的</summary>
+<ul>
+<li>记0~1之间的实数集为 <span class="arithmatex">\(A\)</span> ( <span class="arithmatex">\(A = \{ x \in (0,1) | x \in \mathbb{R} \}\)</span> )</li>
+<li>证明<ol>
+<li>对0~1的所有小数进行编号 <ul>
+<li><span class="arithmatex">\(d_{ij}\)</span> 代表第i个数的第j位小数 </li>
+<li><span class="arithmatex">\(r_i = 0.d_{i1}d_{i2}d_{i3}...\)</span> </li>
+</ul>
+</li>
+<li>只需构造 <span class="arithmatex">\(x = 0.x_1x_2x_3...\)</span><ul>
+<li>其中 <span class="arithmatex">\(x_i \neq d_{ii}\)</span></li>
+</ul>
+</li>
+<li>此时我们可以找到一个未被我们编号的小数,根据引言中的<strong>D2</strong>, 可知 <span class="arithmatex">\(|\mathbb{N}| &lt; |A|\)</span></li>
+</ol>
+</li>
+</ul>
 </details>
-<details><summary>Example2:幂集基数大于其原集</summary>
-
-- $|A|<|P(A)|$
-- 证明
-    1. 假设相等, 则可以找到一个一一映射, $x_i \mapsto f(x_i)(原集的子集) $
-    2. 我们构造一个集合, 包含所有满足不在自己映射的集合中的性质的元素
-    3. 然而对于这个构造出的集合, 也会有一个元素的映射结果是它(满射的性质), 考虑该元素是否存在于这个集合中
-        - 存在, 则其应当满足这个集合中元素的性质, 即不在自己映射的集合中
-        - 不存在, 则其满足该集合的"入集条件", 应当存在
-    4. 矛盾, 故假设不成立, 则幂集和原集基数不同, 同时我们找到原集到幂集的一种映射($x_i \mapsto \{x_i\}$), 故得$|A|<|P(A)| $
+<details class="question">
+<summary>2. 幂集基数大于其原集</summary>
+<ul>
+<li><span class="arithmatex">\(|A|&lt;|P(A)|\)</span></li>
+<li>证明<ol>
+<li>假设相等, 则可以找到一个一一映射, $x_i \mapsto f(x_i)(原集的子集) $</li>
+<li>我们构造一个集合, 包含所有满足不在自己映射的集合中的性质的元素</li>
+<li>然而对于这个构造出的集合, 也会有一个元素的映射结果是它(满射的性质), 考虑该元素是否存在于这个集合中<ul>
+<li>存在, 则其应当满足这个集合中元素的性质, 即不在自己映射的集合中</li>
+<li>不存在, 则其满足该集合的"入集条件", 应当存在</li>
+</ul>
+</li>
+<li>矛盾, 故假设不成立, 则幂集和原集基数不同, 同时我们找到原集到幂集的一种映射(<span class="arithmatex">\(x_i \mapsto \{x_i\}\)</span>), 故得$|A|&lt;|P(A)| $</li>
+</ol>
+</li>
+</ul>
 </details>
-<details><summary>Example3:|[0,1]| = |(0,1)|(实数)</summary>
-
-1. $|(0,1)| \leq |[0,1]|$
-    - $\because (0,1) \subseteq [0,1] \therefore |(0,1)| \leq |[0,1]|$ 
-2. $|(0,1)| \geq |[0,1]|$
-    - 构造一个映射$g :x \mapsto \frac{1}{2}x+\frac{1}{4} $
-    - 得$|[0,1]| = |[\frac{1}{4}, \frac{3}{4}]| \leq |(0,1)|$
-
+<details class="question">
+<summary>3. 在实数域下有|[0,1]| = |(0,1)|</summary>
+<ol>
+<li><span class="arithmatex">\(|(0,1)| \leq |[0,1]|\)</span><ul>
+<li><span class="arithmatex">\(\because (0,1) \subseteq [0,1] \therefore |(0,1)| \leq |[0,1]|\)</span> </li>
+</ul>
+</li>
+<li><span class="arithmatex">\(|(0,1)| \geq |[0,1]|\)</span><ul>
+<li>构造一个映射$g :x \mapsto \frac{1}{2}x+\frac{1}{4} $</li>
+<li>得<span class="arithmatex">\(|[0,1]| = |[\frac{1}{4}, \frac{3}{4}]| \leq |(0,1)|\)</span></li>
+</ul>
+</li>
+</ol>
 </details>
-
 <h3 id="3-computability">3. 可计算的 Computability</h3>
 
 
