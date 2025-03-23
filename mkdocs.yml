@@ -2,6 +2,8 @@ site_name: Ocean的笔记
 
 theme:
   name: material
+  features:
+    - navigation.tabs
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -14,7 +16,20 @@ markdown_extensions:
   - pymdownx.betterem  
   - pymdownx.tasklist 
 
-
+nav:
+  - "🚩 从这里开始":
+    - "封面": index.md
+  - "📔 课内笔记": 
+    - "🏠 首页": course_note/index.md
+    - "♠️ 大一下|离散数学及其应用":
+      - course_note/D1_DM/Chapter1.md
+      - course_note/D1_DM/Chapter2.md
+      - course_note/D1_DM/Chapter4.md
+      - course_note/D1_DM/Chapter5.md
+    - "♣️ 大一下|数据结构基础":
+      - course_note/D1_DS/Chapter4.md
+  - "🔉 碎碎念":
+    - others/软件宣讲会笔记.md
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
