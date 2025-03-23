@@ -26,7 +26,7 @@
 
 ## **2.2 集合操作**
 - 并集 $A\cup B$(Union)
-- 并集 $A\cap B$(Intersection)
+- 交集 $A\cap B$(Intersection)
 - $|A\cup B| = |A| + |B| - |A\cap B|$
 - 集合的差 $A-B = {x|x\in A\land x\not \in B}$
 - 补集 $\overline{A} = \{x|x\not \in A\land x\in U\}$
@@ -35,18 +35,13 @@
 ??? question "如何证明两个集合相等?"
     - $C=D \iff C\subseteq D \land D\subseteq C$
     - 使用集合描述式表达法
-    
-$$
-\begin{align}
-\overline{(A\cup B)} = \{x|x\not \in A\cup B\} \\
-=\{x|\neg (x\in A\cup B)\} \\
+!!! note "如何证明一个集合为空集"
+    - 有时会使用反证法
+### **集合相等**
+- 集合操作中的德摩根定律:
+    - $\overline{A\cup B} = \overline{A}\cap \overline{B} $
+    - $\overline{A\cap B} = \overline{A}\cup \overline{B} $
 
-\end{align}
-$$
-
-=\{x|\neg (x\in A\lor x\in B)\} \\
-=\{x|\neg (x\in A)\land \neg (x\in B)\} \\
-=\{x|\not \in}
 
 ## **2.3 函数 Functions**
 1. 定义
