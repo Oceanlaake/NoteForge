@@ -1,0 +1,5 @@
+# 忽略 MkDocs 生成的静态文件
+site/
+
+# VSCode 配置文件
+.vscode/
