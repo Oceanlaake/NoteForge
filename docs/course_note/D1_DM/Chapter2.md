@@ -32,10 +32,11 @@
 - 补集 $\overline{A} = \{x|x\not \in A\land x\in U\}$
 - 对称差 只属于集合中的一个
 
-??? question "如何证明两个集合相等?"
+!!! note "如何证明两个集合相等?"
     - $C=D \iff C\subseteq D \land D\subseteq C$
     - 使用集合描述式表达法
 !!! note "如何证明一个集合为空集"
+    - 一般先正向思考
     - 有时会使用反证法
 ### **集合相等**
 - 集合操作中的德摩根定律:
