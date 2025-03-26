@@ -48,3 +48,11 @@
     - $p\downarrow p和 \neg p$ 等价
     - $(p\downarrow q)\downarrow(p\downarrow q) 和p\lor q$ 等价
 - 命题的可满足性(satisfiability)
+
+## 1.4谓词逻辑
+
+## 1.5嵌套量词 
+
+## *命题范式
+- 合取范式(CNF): 若干个子句(命题变量的析取式)的合取形式
+- 析取范式(DNF): 若干个子句(命题变量的合取式)的析取形式
