@@ -1,5 +1,5 @@
 # **第二章:基础结构** 
-## **2.1 集合 Sets**
+## **2.1 集合**
 1. 定义
     - 无序对象集
     - 对象可称为元素(elements)或成员(members)
@@ -38,13 +38,13 @@
 !!! note "如何证明一个集合为空集"
     - 一般先正向思考
     - 有时会使用反证法
-### **集合相等**
+- **集合相等**
 - 集合操作中的德摩根定律:
     - $\overline{A\cup B} = \overline{A}\cap \overline{B} $
     - $\overline{A\cap B} = \overline{A}\cup \overline{B} $
 
 
-## **2.3 函数 Functions**
+## **2.3 函数**
 1. 定义
     - $f:A \mapsto B$ (function/mapping/transformations)
         - $ \forall a(a\in A\rightarrow \exists! b(b\in B \land f(a)=b)) $
@@ -75,17 +75,16 @@
 
 ![DM_2](./DM_2.png)
 
-## **2.4 序列 Sequence**
-### 1. 引言 Introduction
+## **2.4 序列**
 - 实际上是对有序数组的一种映射(数组往往是$\{0, 1, 2,...\}$或$\{1,2,3,...\}$)
 - 用$a_n$表示$n$的像
 - 等差数列和等比数列
 - 求和符号$\sum_{i=m}^{n} a_i$
 - 常见的求和公式:
-![DM_3](DM_3.png)
+    ![DM_3](DM_3.png)
 
 
-## **2.5 集合的基数 Cardinality of Sets**
+## **2.5 集合的基数**
 1. 基数的定义
     - **定义 1**: $A$的基数和$B$相等, 表示为$|A|=|B|$当且仅当$A$和$B$之间存在一一对应关系. 
     - **定义 2**: 如果从$A$到$B$存在一个映射, $A$的基数比$B$小, 写作$|A| \leq |B|$.
