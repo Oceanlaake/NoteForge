@@ -9,20 +9,22 @@
       
       
       
-        <link rel="prev" href="../../language/cpp/stl/">
+        <link rel="prev" href="../">
       
       
+        <link rel="next" href="../searchgraph/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
-        <title>X-lab 软件宣讲会笔记 - Ocean的笔记</title>
+        <title>分治算法 - Ocean的笔记</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +45,7 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#x-lab" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Ocean的笔记" class="md-header__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
+    <a href="../../.." title="Ocean的笔记" class="md-header__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              X-lab 软件宣讲会笔记
+              分治算法
             
           </span>
         </div>
@@ -167,7 +169,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   🚩 从这里开始
@@ -185,7 +187,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../course_note/" class="md-tabs__link">
+        <a href="../../../course_note/" class="md-tabs__link">
           
   
   📔 课内笔记
@@ -199,11 +201,21 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../algorithm/" class="md-tabs__link">
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   💻 算法学习
@@ -213,6 +225,9 @@
     
   
 
+    
+  
+
       
         
   
@@ -221,30 +236,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../language/" class="md-tabs__link">
+        <a href="../../../language/" class="md-tabs__link">
           
   
   🧾 语言学习
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  🔉 碎碎念
 
         </a>
       </li>
@@ -274,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Ocean的笔记" class="md-nav__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
+    <a href="../../.." title="Ocean的笔记" class="md-nav__button md-logo" aria-label="Ocean的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -331,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -399,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_note/" class="md-nav__link">
+      <a href="../../../course_note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +455,29 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_note/D1_DM/Chapter1/" class="md-nav__link">
+      <a href="../../../course_note/D1_DM/%E9%9B%B6%E7%A2%8E%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零碎记录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course_note/D1_DM/Chapter1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_note/D1_DM/Chapter2/" class="md-nav__link">
+      <a href="../../../course_note/D1_DM/Chapter2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,11 +521,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_note/D1_DM/Chapter5/" class="md-nav__link">
+      <a href="../../../course_note/D1_DM/Chapter5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     第五章: 归纳和递归
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course_note/D1_DM/Chapter6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第六章: 计数
     
   </span>
   
@@ -573,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course_note/D1_DS/Chapter4/" class="md-nav__link">
+      <a href="../../../course_note/D1_DS/Chapter4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,6 +646,215 @@
       
   
   
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    💻 算法学习
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            💻 算法学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Acwing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Acwing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    分治算法
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    分治算法
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二分查找
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../searchgraph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    搜索与图论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     
@@ -620,14 +868,14 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    💻 算法学习
+    CS61B
     
   </span>
   
@@ -635,10 +883,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            💻 算法学习
+            CS61B
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -649,11 +897,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/" class="md-nav__link">
+      <a href="../../CS61B/note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    🏠 首页
+    Lecture 1
     
   </span>
   
@@ -664,45 +912,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/divide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    分治算法
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/searchgraph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    搜索与图论
-    
-  </span>
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -761,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/" class="md-nav__link">
+      <a href="../../../language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/cpp/read%26write/" class="md-nav__link">
+      <a href="../../../language/cpp/read%26write/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -844,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language/cpp/stl/" class="md-nav__link">
+      <a href="../../../language/cpp/stl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,171 +1073,6 @@
             
           </ul>
         </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    🔉 碎碎念
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            🔉 碎碎念
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    X-lab 软件宣讲会笔记
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    X-lab 软件宣讲会笔记
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      如何在计院高效学习
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="如何在计院高效学习">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      课内部分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      课外部分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      时间分配*
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      培养方案的问题
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1066,51 +1113,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      如何在计院高效学习
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="如何在计院高效学习">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      课内部分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      课外部分
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      时间分配*
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      培养方案的问题
+      二分查找
     </span>
   </a>
   
@@ -1132,59 +1137,23 @@
 
 
 
-<h1 id="x-lab">X-lab 软件宣讲会笔记</h1>
-<h2 id="_1">如何在计院高效学习</h2>
-<h3 id="_2">课内部分</h3>
+<h1 id="_1">分治算法</h1>
+<h2 id="_2">二分查找</h2>
 <ul>
-<li>大作业组队: 不要做老好人</li>
-<li>信息差<ul>
-<li>学长学姐</li>
-<li>高效的信息获取</li>
-</ul>
-</li>
-</ul>
-<h3 id="_3">课外部分</h3>
-<ul>
-<li>精力分配</li>
-<li>zju 课外时间较多, 有助于我们尝试更多的路. 课内仍旧可以同时保证较好的学分</li>
-<li>选课 <strong>机会成本</strong></li>
-<li>如果有了自己的职业规划或者发展方向, 可以基于自己的方向学习课程反过来调整自己的学习<em>path</em><ul>
-<li><strong>对某个方向有深入的理解比什么都懂一点更容易变现</strong></li>
-<li>高性能计算, 大模型? 图形学? 游戏? 编程语言岗位?</li>
-<li>行业消失的风险?? </li>
-</ul>
-</li>
-<li>科班/非科班的区别</li>
-<li>升学: 科研能力/科研关系网</li>
-<li>就业: 应用层熟练度/编程语言<strong>升学要对自己有帮助</strong>: 不要觉得自己是找不到工作才去升学(硕士需要对自己就业有帮助)</li>
-</ul>
-<h3 id="_4">时间分配*</h3>
-<ul>
-<li>自我感动问题: 陷入自我局部舒适区(自己的成功带来对于在这个领域投入过多的精力)</li>
-<li><code>20-70-10</code>原则:<ul>
-<li>米饭:最简单的部分, 用于提供脚踏实地感觉</li>
-<li>主菜:一定挑战性工作, 迅速提升</li>
-<li>10% 极有挑战性的工作</li>
-</ul>
-</li>
-<li><code>边际效应曲线</code><ul>
-<li>学新东西 <span class="arithmatex">\(\not=\)</span> 学到的东西对我有用(我应该学习)</li>
-<li>现在当下应当去做什么!!!!</li>
-</ul>
-</li>
-</ul>
-<h2 id="_5">培养方案的问题</h2>
-<ul>
-<li>培养方案全面不代表你知识全面</li>
-<li>课改的阵痛</li>
-<li>非本校研究生助教-不知道痛点</li>
 <li>
-<p>X-lab 文档方向</p>
+<p>主要是计算mid的记忆问题, 一个总结出来的方法就是以每次划分的结果判断mid</p>
+<ul>
+<li>如果划分成[l, mid], [mid + 1, r], 那么整体的重心是偏左的, 所以mid也应该靠左</li>
+<li>反之划分成[l, mid - 1], [mid, r], 那么计算mid就得往右靠</li>
+</ul>
 </li>
 <li>
-<p>不断问自己然后呢 反向传播</p>
+<p>acwing 1227 分巧克力问题</p>
+<ul>
+<li>第一次做的时候压根就没去考虑二分, 而是直接枚举, 最后必定是tle的</li>
+<li>二分的界限直接让l取到了数据上限, 有点意思</li>
+</ul>
 </li>
-<li>技术为我所用</li>
 </ul>
 
 
@@ -1232,16 +1201,16 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"></script>
       
-        <script src="../../_js/katex.js"></script>
+        <script src="../../../_js/katex.js"></script>
       
     
   </body>
