@@ -43,7 +43,6 @@ nav:
       - language/cpp/read&write.md
       - language/cpp/stl.md
   - "🔉 碎碎念":
-    - others/软件宣讲会笔记.md
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js
