@@ -23,6 +23,7 @@ nav:
   - "📔 课内笔记": 
     - "🏠 首页": course_note/index.md
     - "♠️ 大一下|离散数学及其应用":
+      - course_note/D1_DM/零碎记录.md
       - course_note/D1_DM/Chapter1.md
       - course_note/D1_DM/Chapter2.md
       - course_note/D1_DM/Chapter5.md
@@ -30,9 +31,12 @@ nav:
     - "♣️ 大一下|数据结构基础":
       - course_note/D1_DS/Chapter4.md
   - "💻 算法学习":
-    - "🏠 首页": algorithm/index.md
-    - "分治算法" : algorithm/divide.md
-    - "搜索与图论" : algorithm/searchgraph.md
+    - "Acwing":
+      - algorithm/Acwing/index.md
+      - algorithm/Acwing/divide.md
+      - algorithm/Acwing/searchgraph.md
+    - "CS61B":
+      - algorithm/CS61B/note.md
   - "🧾 语言学习":
     - "🏠 首页": language/index.md
     - "cpp": 
