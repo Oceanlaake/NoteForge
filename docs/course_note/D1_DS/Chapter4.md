@@ -1,8 +1,36 @@
-# 第四章:树
-## 4.2 二叉树
-
-## 4.3 二叉搜索树
-
+## 期中复习
+### 算法分析
+- 一个程序可以没有输入, 但是至少有一个输出
+- logN的函数, 无论乘多少次幂, 最终增长还是不会比线性增长快
+- 判断一个程序的时间复杂度时, 会存在"完全不执行的情况"这时的循环次数要减掉
+- 看清楚在问你时间复杂度还是空间复杂度
+### ADT 抽象数据类型
+- Sepecification注重
+- Representation and Implementation
+- 线性表(linear list)是一种ADT(增删取遍历)
+    - 数组: 顺序存储结构(Sequentially stored)
+    - 链表: 链式存储结构(linked)
+- Stack等数据结构的具体实现应当是封装良好的
+#### 中缀转后缀
+- 中->后: 就是记住这一点:**若栈顶运算符优先级不低于当前运算符 → 弹出栈顶运算符并输出**
+- 左括号的优先级: 在外面无脑入, 在内部除非碰见`)`否则不出
+- ^的特殊处理: 栈顶元素低于`^`, 则直接弹出(正常情况下, 就是只有`^`不出栈, 其他均出)
+#### 队列
+- front指的是当前队列第一个元素的位置, rear指的是下一个入队元素的位置
+### 树
+- 树也是一种ADT, 但是由于内容(可能)繁多, 所以单独列一档
+- 树中节点的度(degree):出度
+- 树的度:节点中最大出度
+- path长度: 边的数量
+- 深度(depth)和高度(height): 深度是到root的path长度, 高度是到最低叶节点的path长度
+- $N-1 = n_1+ 2*n_2+ 3*n_3+...$
+- 广义的后序 = 二叉树的中序
+#### 线索二叉树
+- 左(若空)指向中序前驱(若空, 指向哑节点), 称为线索
+- 右(若空)指向中序后继(若空, 指向哑节点), 也是线索
+- 正式遍历时, 如果有左孩子(左指针不是线索), 则不断向左走
+- 访问当前节点, 如果右指针为线索, 直接跳到中序后继, 如果是右孩子, 再进行向左走
+#### 搜索二叉树
 - **定义**: 对于二叉树中每一个节点X，其左子树中的所有键的值都小于X的键值，右子树中的所有键的值都大于X的键值。这是一种动态的结构
 - **性质**:
      1. 最小节点在左叶节点, 最大节点在右叶节点.
@@ -10,80 +38,11 @@
      3. 中序遍历递增
 - **操作**: **查找**, 插入, 删除等
 - **复杂度**: 平均O(logn), 最坏O(n), 由结构决定
-### *查找*
-```
-/*递归查找*/
-BSTNode* search(BSTNode* root, int key) {
-    if (root == NULL || root->key == key) {
-        return root;     //不在树中/找到了
-    }
-    if (key < root->key) {
-        return search(root->left, key);   //在左子树中查找
-    } else {
-        return search(root->right, key);  //在右子树中查找
-    }
-}
-```
-```
-/*非递归查找*/
-BSTNode* search(BSTNode* root, int key) {
-    while (root!= NULL && root->key!= key) {
-        if (key < root->key) {
-            root = root->left;
-        } else {
-            root = root->right;
-        }
-    }
-    return root;
-}
-```
-### *插入*
-- 一般不会重复, 如遇到重复对节点增加count
-```
-/*非递归插入*/
-BSTNode* insert(BSTNode* root, int key) {
-    if (root == NULL) {
-        return new BSTNode(key);
-    }
-    if (key < root->key) {
-        root->left = insert(root->left, key);
-    } else if (key > root->key) {
-        root->right = insert(root->right, key);
-    }
-    return root;
-}
-```
-### *删除*
-- 删除叶节点: 直接删除, 使用NULL代替
-- 删除只有一个子节点的节点: 直接用子节点替换父节点
-- 删除有两个子节点的节点: 用左子树最大值和右子树最小值替换父节点, 将删除两个子节点节点的问题转化为删除无或有一个子节点节点的问题
-```
-/*递归删除*/
-BSTNode* delete(BSTNode* root, int key){
-    BSTNode* TmpCell;
-    if(root == NULL){
-        error("key not found");
-    }else if(key < root->key){
-        root->left = delete(root->left, key);
-    }else if(key > root->key){
-        root->right = delete(root->right, key);
-    }else{
-        if(root->left && root->right){
-            BSTNode* TempCell = findMin(root->right);
-            root->key = TempCell->key;
-            root->right = delete(root->right, TempCell->key);
-        }
-        else{
-            TmpCell = root;
-            if(TmpCell->left == NULL){
-                TmpCell = TmpCell->right;
-            }
-            else if(TmpCell->right == NULL){
-                TmpCell = TmpCell->left;
-            }
-            free(TmpCell);
-        }
-    }
-    return root;
-}
-```
+- 删除
+    - 删除叶节点: 直接删除, 使用NULL代替
+    - 删除只有一个子节点的节点: 直接用子节点替换父节点
+    - 删除有两个子节点的节点: 用左子树最大值和右子树最小值替换父节点,将删除两个子节点节点的问题转化为删除无或有一个子节点节点的问题
+#### 堆
+- 数组存储的堆一般index从1开始
+- 课程(习题)里的heap似乎都是从数组下标1开始存储的
+- 某个点$i$的$\left\lfloor \frac{i + d - 2}{d} \right\rfloor, \ (i - 1) d + 2, \text{ and } i d + 1$分别代表: 父亲, 左儿子, 右儿子
