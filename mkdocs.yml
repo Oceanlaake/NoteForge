@@ -29,7 +29,7 @@ nav:
       - course_note/D1_DM/Chapter5.md
       - course_note/D1_DM/Chapter6.md
     - "♣️ 大一下|数据结构基础":
-      - course_note/D1_DS/Chapter4.md
+      - course_note/D1_DS/note.md
   - "💻 算法学习":
     - "Acwing":
       - algorithm/Acwing/index.md
