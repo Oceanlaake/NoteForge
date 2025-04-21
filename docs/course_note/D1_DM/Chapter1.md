@@ -48,6 +48,8 @@
     - $p\downarrow p和 \neg p$ 等价
     - $(p\downarrow q)\downarrow(p\downarrow q) 和p\lor q$ 等价
 - 命题的可满足性(satisfiability)
+    - 至少存在一组命题变量赋值, 使得该命题为真
+    - 和consistent的区别: 单命题vs多命题
 
 ## 1.4谓词逻辑
 - **谓词(predicate)**
@@ -67,6 +69,10 @@
 - **De Morgan's law**
     - $\neg \forall xP(x) \equiv \exists x\neg P(x)$
     - $\neg \exists xP(x) \equiv \forall x\neg P(x)$
+- 将语句转化成逻辑表达时
+    - $\forall$和$\to$ , $\exist$和$\land$似乎总是对应出现
+    - 一种代表的是普适规则的推出, 一种代表的是某例子身上同时包含了多种特征
+
 ## 1.5嵌套量词 
 - 除非所有量词都是$\forall$或所有量词都是$\exists$, 否则量词的顺序是有意义的。
     !!! note "如何用量词方式翻译有且仅有一个"
