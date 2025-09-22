@@ -22,21 +22,30 @@ nav:
     - "封面": index.md
   - "📔 课内笔记": 
     - "🏠 首页": course_note/index.md
-    - "♠️ 大一下|离散数学及其应用":
-      - course_note/D1_DM/零碎记录.md
+    - "大一下|离散数学及其应用":
       - course_note/D1_DM/Chapter1.md
       - course_note/D1_DM/Chapter2.md
       - course_note/D1_DM/Chapter5.md
       - course_note/D1_DM/Chapter6.md
-    - "♣️ 大一下|数据结构基础":
+      - course_note/D1_DM/零碎记录.md
+    - "大一下|数据结构基础":
       - course_note/D1_DS/note.md
+    - "大二上|高级数据结构与算法分析":
+      - course_note/D2_ADS/note01.md
+    - "大二上|计算机系统原理":
+      - course_note/D2_CSP/note01.md
+    - "大二上|面向对象程序设计":
+      - course_note/D2_OOP/note01.md
   - "💻 算法学习":
     - "Acwing":
       - algorithm/Acwing/index.md
       - algorithm/Acwing/divide.md
       - algorithm/Acwing/searchgraph.md
+  - "🧩 自学札记":
+    - "🏠 首页": self-learing/index.md
     - "CS61B":
-      - algorithm/CS61B/note.md
+      - self-learing/CS61B/note01.md
+      - self-learing/CS61B/note02.md
   - "🧾 语言学习":
     - "🏠 首页": language/index.md
     - "cpp": 

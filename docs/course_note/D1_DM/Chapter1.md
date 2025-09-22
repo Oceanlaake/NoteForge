@@ -40,12 +40,18 @@
 - *常见的等价命题*
 ![等价命题(1)](DM_4.png)
 ![等价命题(2)](DM_5.png)
+- **simplification law**: 
+    - **本质**: 分配律
+    - $(\neg p\land q)\lor p = q\lor p$
+    - $(\neg p\lor q)\land p = q\land p$
+
 !!! note "如何证明两个命题逻辑等价"
     - 1 真值表相同(当命题变量较多时, 显然不够效率)
     - 2 使用等价公式
     - 如何证明不等价: 找出反例(对变量进行赋值即可)(最快且有效率)
 - $p\downarrow q$ 表示NOR运算, 只有p和q均为假时整个式子才为真
     - $p\downarrow p和 \neg p$ 等价
+    - $p\downarrow p$和$\neg p\land \neg q$等价
     - $(p\downarrow q)\downarrow(p\downarrow q) 和p\lor q$ 等价
 - 命题的可满足性(satisfiability)
     - 至少存在一组命题变量赋值, 使得该命题为真
@@ -57,6 +63,7 @@
 - **量词(quantifier)**
     - 全称量词: $\forall xP(x)$
     - 存在量词: $\exist yP(y)$
+    - 在同时使用存在量词和全称量词时, 需要特别注意顺序
     !!! note
         - $domain\{x_1, x_2, x_3....\}$
         - $\forall xP(x) \equiv P(x_1)\land P(x_2)\land P(x_3)...$
@@ -85,9 +92,11 @@
     4. 将量词移到最前面
 ## 拓展: 命题范式
 - 逻辑完备: 某组逻辑符号可以表示任意逻辑表达式
-- 合取范式(CNF): 若干个子句(命题变量的析取式)的合取形式
-- 析取范式(DNF): 若干个子句(命题变量的合取式)的析取形式
-- minterm: 句中每个命题都出现且仅出现一次
+- 合取范式(**CNF**): 若干个子句(命题变量的析取式)的合取($\land$)形式
+- 析取范式(**DNF**): 若干个子句(命题变量的合取式)的析取($\lor$)形式
+- 从真值表中得到的是**FDNF**
+- minterm: 命题中每个都出现且仅出现一次
+    - a disjuction of minterm = FDNF
 
 ## 推理规则
--
+- formal form of an argument: 即将所有前提列出+画横线+$\therefore$ 结论
