@@ -32,7 +32,11 @@
 - Clock period = 1/Clock Frequency
 - CPU Time = Clock Period x Number of Clock Cycles = Number of Clock Cycles/Clock Frequency
 - Number of Clock Cycles = Number of Instructions x CPI（Cycles Per Instruction）
+- 增加处理器对响应时间（处理单个任务）没有影响
     
 - 吞吐率（有些情况下会影响响应时间）
 - CPU主频（Clock Frequency）：CPU的时钟频率，单位是赫兹（Hz）。
-- IPC（Instructions Per Cycle）：每周期指令数，即CPU每秒钟可以执行的指令数。
+
+- IC 集成电路
+- 芯片功耗$Power=Capacitive load×Voltage^{2}×Frequency$
+- SPEC CPU Benchmark
